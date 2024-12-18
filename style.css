@@ -1,17 +1,17 @@
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
-    background-color: #f9f9f9;
+    background-color: #d4d3d3;
     color: #333;
   }
   
   .container {
     max-width: 400px;
     margin: auto;
-    background: white;
+    background: rgb(163, 158, 158);
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(136, 87, 87, 0.1);
   }
   
   h1 {
@@ -20,20 +20,20 @@ body {
   
   input, button {
     width: 100%;
-    padding: 10px;
+    padding: 6px;
     margin: 5px 0;
-    border: 1px solid #ddd;
+    border: 2px solid #0a0707;
     border-radius: 4px;
   }
   
   button {
-    background-color: #28a745;
+    background-color: #0f0d85;
     color: white;
     cursor: pointer;
   }
   
   button:hover {
-    background-color: #218838;
+    background-color: #2f2cc9;
   }
   
   ul {
