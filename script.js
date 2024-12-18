@@ -20,3 +20,19 @@ addTaskButton.addEventListener("click", () => {
 });
 
 // Delete Task
+function deleteTask(index) {
+    tasks.splice(index, 1);
+    saveTasks();
+    renderTasks(tasks);
+}
+
+// Edit Taskk
+function editTask(index) {
+    const newTask = prompt("Edit Task:", tasks[index].text);
+    if (newTask === null || newTask.trim() === "") return;
+
+    tasks[index].text = newTask.trim()
+    saveTasks();
+    renderTasks(tasks);
+}
+
