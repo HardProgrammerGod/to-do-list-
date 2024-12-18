@@ -36,3 +36,30 @@ function editTask(index) {
     renderTasks(tasks);
 }
 
+// search tasks
+searchInput.addEventListener("input", () => {
+    const searchText = searchInput.value.toLowerCase();
+    const filteredTasks = tasks.filter(task => task.text.toLowerCase().includes(searchText));
+    renderTasks(filteredTasks);
+});
+
+// Render Tasks
+function renderTasks(taskArray) {
+    taskList.innerHTML = "";
+    taskArray.forEach((task, index) => {
+      const li = document.createElement("li");
+      li.innerHTML = `
+        <span>${task.text}</span>
+        <div>
+          <button onclick="editTask(${index})">Edit</button>
+          <button onclick="deleteTask(${index})">Delete</button>
+        </div>
+      `;
+      taskList.appendChild(li);
+    });
+  }
+
+// save tasks to storage (local)
+function saveTasks() {
+    localStorage.setItem("tasks", JSON.stringify(tasks));
+}
