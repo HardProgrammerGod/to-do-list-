@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 20px;
     background-color: #d4d3d3;
-    color: #333;
+    color: #030000;
   }
   
   .container {
@@ -47,7 +47,7 @@ body {
     align-items: center;
     margin: 5px 0;
     padding: 10px;
-    background: #f1f1f1;
+    background: #faf9f9;
     border-radius: 4px;
   }
   
